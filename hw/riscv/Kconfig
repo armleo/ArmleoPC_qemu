@@ -27,6 +27,12 @@ config SPIKE
     select HTIF
     select SIFIVE
 
+config ARMLEOPC
+    bool
+    select HART
+    select SERIAL
+    select SIFIVE
+
 config RISCV_VIRT
     bool
     imply PCI_DEVICES
